@@ -26,6 +26,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    // Global variables
     private TextView txtLogin;
     private MaterialButton btnSignUp;
     private EditText email,pass,name,school;
