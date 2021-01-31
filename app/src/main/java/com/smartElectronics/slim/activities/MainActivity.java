@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     
-    /// start methods
+    /// start my methods from here
     
     private void initViews(){
 
