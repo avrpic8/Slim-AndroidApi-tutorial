@@ -52,6 +52,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initViews();
     }
 
+  
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()){
+
+            case R.id.txt_login:
+                startActivity(new Intent(getBaseContext(), LoginActivity.class));
+                break;
+
+            case R.id.btn_signUp:
+                userSignUp();
+                break;
+        }
+    }
+
+    
+    /// start methods
+    
     private void initViews(){
 
         txtLogin = findViewById(R.id.txt_login);
@@ -68,23 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onClick(View v) {
-
-        switch (v.getId()){
-
-            case R.id.txt_login:
-                startActivity(new Intent(getBaseContext(), LoginActivity.class));
-                break;
-
-            case R.id.btn_signUp:
-                userSignUp();
-                break;
-        }
-    }
-
-
-    /// start methods
+    
     private void userSignUp() {
 
         String email  = this.email.getText().toString().trim();
