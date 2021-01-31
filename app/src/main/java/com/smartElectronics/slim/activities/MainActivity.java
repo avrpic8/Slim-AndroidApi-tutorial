@@ -1,4 +1,4 @@
-package com.smartElectronics.slim.activities;
+ package com.smartElectronics.slim.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
